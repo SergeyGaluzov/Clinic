@@ -1,0 +1,57 @@
+body{
+    /*background-color:#1B74E9;*/
+}
+.login_form,.registration_form{
+    background-color:white;
+    margin-top:10rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    border: 0.5px solid rgb(218, 215, 215);
+}
+
+.login_form_text_1,.login_form_text_2{
+    text-align: center;
+    font-size: 1rem;
+}
+.login_form_text_1{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 20rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgb(218, 215, 215);
+    padding: 0.5rem;
+    box-shadow: 0 0 200px rgba(0,0,0,0.1);
+    margin-bottom:1rem;
+}
+
+.login_form_input,.reg_a{
+    width:20rem;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.some_text{
+    font-weight: 500;
+}
+
+.form_a{
+    background-color:#1B74E9;
+    color:white;
+    border-radius: 0.5rem;
+    padding:0.5rem 1rem;
+}
+
+.reg_a{
+    margin-top: 1rem;
+    border:none;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
