@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 var express = require('express');
 var router = express.Router();
 
@@ -25,19 +24,24 @@ router.post('/', function(req, res){
   const password = req.body.password;
   
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(error=>{
-    var errorCode = error.code;
-    var errorMessage = error.message;
+    let errorCode = error.code;
+    let errorMessage = error.message;
   });
+
 
   const user = firebase.auth().currentUser;
-  const ref = firebase.database().ref("users/" + user.uid).set({
-    name: name,
-    surname: surname,
-    email: email,
-    password: password,
-  });
-  res.redirect('/');
-
+  if(user !== null){
+    firebase.database().ref("users/" + user.uid).set({
+      name: name,
+      surname: surname,
+      email: email,
+      password: password,
+    });
+    res.redirect("..");
+  }
+  else{
+    res.sendFile(__dirname.replace("routes", "") + "kpi_lab/registration.html");
+  }
 })
 
 module.exports = router;
