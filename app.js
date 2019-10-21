@@ -12,7 +12,6 @@ app.use(express.static('kpi_lab'));
 app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "hbs");
 
-
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/register');
 app.use('/register', usersRouter);

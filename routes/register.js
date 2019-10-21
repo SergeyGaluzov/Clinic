@@ -36,6 +36,8 @@ router.post('/', function(req, res){
     email: email,
     password: password,
   });
+  res.redirect('/');
+
 })
 
 module.exports = router;
