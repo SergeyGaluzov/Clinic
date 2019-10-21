@@ -13,8 +13,8 @@ const firebaseConfig = {
 };
 const firebase_init = firebase.initializeApp(firebaseConfig);
 
-router.get('/', function(req, res, next) {
-  res.sendFile(__dirname.replace("routes", "") + "kpi_lab/registration.html");
+router.get('/', function(req, res) {
+  res.sendFile(__dirname.replace("routes", "") + "kpi_lab/html/registration.html");
 });
 
 router.post('/', function(req, res){
@@ -40,8 +40,8 @@ router.post('/', function(req, res){
     res.redirect("..");
   }
   else{
-    res.sendFile(__dirname.replace("routes", "") + "kpi_lab/registration.html");
+    res.sendFile(__dirname.replace("routes", "") + "kpi_lab/html/registration.html");
   }
-})
+});
 
 module.exports = router;

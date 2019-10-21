@@ -1,13 +1,21 @@
 body{
     /*background-color:#1B74E9;*/
 }
-.login_form,.registration_form{
+
+a{
+    color:white;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+.login_form,.registration_form,.registration2_form,.specialization_choice_form{
     background-color:white;
     margin-top:10rem;
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: 0 0 100px rgba(0,0,0,0.1);
     border: 0.5px solid rgb(218, 215, 215);
+    /*border:5px solid red;*/
 }
 
 .login_form_text_1,.login_form_text_2{
@@ -53,5 +61,16 @@ input{
     text-align: center;
     width: 100%;
     text-align: center;
+}
+
+.some_a{
+    background-color:#1B74E9;
+    height:2.5rem;
+    color:white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgb(218, 215, 215);
+
 }
 
